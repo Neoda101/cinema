@@ -6,6 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .text {
+            font-size: 20;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .text2 {
+            font-size: 20;
+            padding: 50px;
+            border: 2px solid;
+
+        }
+    </style>
+
 
 </head>
 
@@ -76,9 +103,9 @@
         </div>
         <div>
 
-            <span>+7 (800) 355 12-56</span>
+            <a href="+78003551256">+7 (800) 355 12-56</a>
 
-            <a href="https:/innopolis.University">kino@innopolis.ru</a>
+            <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
             <span>ул.Спортивная д.1</span>
             <span>RU</span>
         </div>
@@ -92,9 +119,9 @@
 
         </div>
     </header>
-    <div>
-        <span>Закажите билет в кино</span>
-    </div>
+    <section>
+        <h1>Закажите билет в кино</h1>
+    </section>
     <div>
         <span><b>Всем покупателям подарок!</b></span>
     </div>
@@ -109,7 +136,16 @@
             Excepteur sint occaecat cupidatat <br> non proident, sunt.</p>
 
     </div>
-    <div>
+    <ol>Меню страницы
+        <li><a href="#block1">Почему мы?</a></li>
+        <li><a href="#block2">Выберите фильм</a></li>
+        <li><a href="#block3">Подарок каждому!</a></li>
+        <li><a href="#block4">Фильмы</a></li>
+        <li><a href="#block5">Товары</a></li>
+        <li><a href="#block6">Отзывы</a></li>
+        <li><a href="#block7">Обратная связь</a></li>
+    </ol>
+    <div id="block1">
         <b>Почему мы?</b>
 
         <div>
@@ -164,16 +200,43 @@
 
         </div>
     </div>
-    <div>
-        <b>Выберите фильм</b>
-        <p>Начало сеанса Название фильма Жанр</p>
-        <p>10:00 Человек-паук Фантастика,боевик,приключения</p>
-        <p>12:00 Собачья жизнь 2 Фэнтэзи,драма,комедия</p>
-        <p>14:00 История игрушек 4 Мультфильм,фэнтэзи,комеди</p>
-        <p>16:00 Люди в черном:Интэрнэшнл Фантастика,боевик,комедия</p>
+    <section id="block2">
+        <h2><b>Выберите фильм</b></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Начало сеанса</th>
+                    <th>Название фильма</th>
+                    <th>Жанр</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00</td>
+                    <td>Человек-паук</td>
+                    <td>Фантастика,боевик,приключения</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>Собачья жизнь 2</td>
+                    <td>Фэнтэзи,драма,комедия</td>
+                </tr>
+                <tr>
+                    <td>14:00</td>
+                    <td>История игрушек</td>
+                    <td>Мультфильм,фэнтэзи,комедия</td>
+                </tr>
+                <tr>
+                    <td>16:00</td>
+                    <td>Люди в черном:Интэрнэшнл</td>
+                    <td>Фантастика,боевик,комедия</td>
+                </tr>
+            </tbody>
+        </table>
 
-    </div>
-    <div>
+
+    </section>
+    <div id="block3">
         <b>Подарок каждому!</b>
 
 
@@ -191,8 +254,8 @@
             vehicula ipsum.</p>
     </div>
 
-    <div>
-        <q><b>Фильмы</b></q>
+    <section id="block4">
+        <h3><b>Фильмы</b></h3>
 
         <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -228,15 +291,19 @@
 
         <div> <a href="http://kinopoisk.ru" target=" _blank"> <img src="images/18042054-942003 1.png"
                     alt="Постер фильма Живое"></a></div>
-    </div>
+    </section>
 
-    <div>
-        <b>Товары</b>
-    </div>
+    <div id="block5">
+        <dl>
+            <dt><b>Товары</b></dt>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.
-    </p>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                <br> magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
+                non quam.
+            </dd>
+        </dl>
+    </div>
     <div> <a href="http://www.coca-cola.ru" target=" _blank">
             <img src="images/c8fd26f982-2 2.svg" alt="Кока-кола"> </a>
 
@@ -245,7 +312,7 @@
             src="images/40073568b 1.svg" alt="Постер Мстители">
     </div>
 
-    <div>
+    <div id="block6">
         <span><b>Отзывы</b></span>
     </div>
     <div>
@@ -275,8 +342,46 @@
         <span>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut
             labore <br> et dolore magna aliqua. </span>
     </div>
+    <form action="/order" id="block7">
+        <label>Полное имя</label>
+        <input class="text" type="text" name="" value="" required placeholder="Полное имя">
+        <div>
+            <label>Номер места</label>
+            <select class="text" name="Номер места" required>
+                <option value="">--Не выбрано--</option>
+                <option value="ряд 1 место 1">ряд 1 место 1</option>
+                <option value="ряд 1 место 2">ряд 1 место 2</option>
+                <option value="ряд 1 место 3">ряд 1 место 3</option>
+                <option value="ряд 1 место 4">ряд 1 место 4</option>
+                <option value="ряд 1 место 5">ряд 1 место 5</option>
+                <option value="ряд 1 место 6">ряд 1 место 6</option>
+                <option value="ряд 1 место 7">ряд 1 место 7</option>
+                <option value="ряд 1 место 7">ряд 1 место 8</option>
+                <option value="ряд 1 место 7">ряд 1 место 9</option>
+                <option value="ряд 1 место 7">ряд 1 место 10</option>
+            </select>
+        </div>
+        <div>
+            <label>Отзыв</label>
+            <input class="text2" type="text" name="" value="" placeholder="Напишите свой отзыв">
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" required>Я согласен на обработку своих персональных данных
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="submit" value="ПОСЛАТЬ">
+            </label>
+        </div>
+    </form>
+    <div>
+        <img src="images/image 2.png" alt="Карта">
+    </div>
     <footer>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</span>
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam</span>
 
         <div>
             <span>SITE</span>
