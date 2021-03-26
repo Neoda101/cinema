@@ -342,11 +342,17 @@
         <span>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut
             labore <br> et dolore magna aliqua. </span>
     </div>
-    <form action="/order" id="block7">
-        <label>Полное имя</label>
+    <form action="/order.php" id="block7">
+        <label>Полное имя
         <input class="text" type="text" name="" value="" required placeholder="Полное имя">
+    </label>
         <div>
-            <label>Номер места</label>
+            <label>Адрес электронной почты
+                <input class="text" type="email" name= "" value= "" required placeholder="Электронная почта">
+            </label>
+        </div>
+            <div>
+            <label>Номер места
             <select class="text" name="Номер места" required>
                 <option value="">--Не выбрано--</option>
                 <option value="ряд 1 место 1">ряд 1 место 1</option>
@@ -360,10 +366,12 @@
                 <option value="ряд 1 место 7">ряд 1 место 9</option>
                 <option value="ряд 1 место 7">ряд 1 место 10</option>
             </select>
+            </label>
         </div>
         <div>
-            <label>Отзыв</label>
+            <label>Отзыв
             <input class="text2" type="text" name="" value="" placeholder="Напишите свой отзыв">
+            </label>
         </div>
         <div>
             <label>
@@ -372,7 +380,7 @@
         </div>
         <div>
             <label>
-                <input type="submit" value="ПОСЛАТЬ">
+                <input type="submit" value="ЗАКАЗАТЬ">
             </label>
         </div>
     </form>
